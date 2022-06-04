@@ -1,1 +1,22 @@
-<p>sidebar works!</p>
+<h2>Busquedas</h2>
+<hr />
+<ul class="list-group">
+  <!-- routerLinkActive anade la clase active cuando la ruta es la activa.
+        El routerLinkActiveOptions = exact: true hace que solo se agregue la clase cuando la ruta sea exactamente '/'
+  -->
+
+  <li
+    routerLink=""
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="list-group-item"
+  >
+    Por Pais
+  </li>
+  <li routerLink="capital" routerLinkActive="active" class="list-group-item">
+    Por Capital
+  </li>
+  <li routerLink="region" routerLinkActive="active" class="list-group-item">
+    Por Region
+  </li>
+</ul>
