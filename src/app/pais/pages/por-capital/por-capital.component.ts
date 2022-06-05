@@ -22,15 +22,10 @@ export class PorCapitalComponent {
       (paises) => {
         this.paises = paises;
       },
-      (error) => {
+      () => {
         this.paises = [];
         this.hayError = true;
       }
     );
-  }
-
-  sugerencias(termino: string) {
-    this.hayError = false;
-    // this.buscar(termino);
   }
 }
